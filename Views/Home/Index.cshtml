@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+  
+   
+</head>
+<body>
+
+    <div class="container m-4">
+        <div class="card mx-auto" style="width:500px;">
+            <div class="card-header">
+                @ViewBag.Greetings @ViewBag.Name ,Nasılsın ?
+            </div>
+            <div class="card-body">
+               <p class="card-text">
+                   Umarım Başarılı olursun ...
+               </p>
+                <a asp-action="apply" asp-controller="Course" class="btn btn-primary">
+                    Başvuru Yap
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
